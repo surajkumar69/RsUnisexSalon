@@ -1,0 +1,87 @@
+@import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800&family=Playfair+Display:wght@400;500;600;700&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  * {
+    @apply scroll-smooth;
+  }
+  
+  body {
+    @apply bg-black text-white font-sans antialiased;
+  }
+  
+  html {
+    scroll-behavior: smooth;
+  }
+}
+
+@layer utilities {
+  .glass {
+    @apply bg-white/5 backdrop-blur-lg border border-white/10;
+  }
+  
+  .glass-card {
+    @apply bg-white/5 backdrop-blur-lg border border-white/10 rounded-2xl;
+  }
+  
+  .gold-gradient {
+    @apply bg-gradient-to-r from-gold via-goldLight to-gold;
+  }
+  
+  .text-gold-gradient {
+    @apply bg-gradient-to-r from-gold via-goldLight to-gold bg-clip-text text-transparent;
+  }
+  
+  .btn-premium {
+    @apply px-8 py-4 bg-gradient-to-r from-gold to-goldDark text-black font-semibold rounded-full 
+           hover:shadow-lg hover:shadow-gold/30 transition-all duration-300 transform hover:scale-105;
+  }
+  
+  .btn-outline {
+    @apply px-8 py-4 border-2 border-gold text-gold font-semibold rounded-full 
+           hover:bg-gold hover:text-black transition-all duration-300;
+  }
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+}
+
+::-webkit-scrollbar-track {
+  background: #0F172A;
+}
+
+::-webkit-scrollbar-thumb {
+  background: linear-gradient(180deg, #FACC15, #CA8A04);
+  border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: linear-gradient(180deg, #FDE047, #FACC15);
+}
+
+/* Cursor Animation */
+.custom-cursor {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #FACC15;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transition: transform 0.1s ease;
+}
+
+.custom-cursor-dot {
+  width: 8px;
+  height: 8px;
+  background: #FACC15;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+}
