@@ -47,9 +47,11 @@ const OpeningAnimation = () => {
               ease: "easeInOut",
             }}
           >
-            <div className="w-24 h-24 mx-auto bg-gradient-to-br from-gold to-goldDark rounded-full flex items-center justify-center shadow-2xl shadow-gold/30">
-              <Scissors className="w-12 h-12 text-black" />
-            </div>
+            <img 
+              src="/WhatsApp Image 2026-06-28 at 3.47.07 PM.jpeg" 
+              alt="RS Unisex Salon Logo" 
+              className="w-32 h-32 mx-auto object-contain rounded-full shadow-2xl shadow-gold/30"
+            />
           </motion.div>
           
           <motion.h1

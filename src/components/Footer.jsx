@@ -57,13 +57,11 @@ const Footer = () => {
             transition={{ duration: 0.5 }}
           >
             <div className="flex items-center gap-3 mb-4">
-              <div className="w-10 h-10 bg-gradient-to-br from-gold to-goldDark rounded-full flex items-center justify-center">
-                <Scissors className="w-5 h-5 text-black" />
-              </div>
-              <div>
-                <h3 className="text-xl font-serif font-bold text-white">RS UNISEX</h3>
-                <p className="text-xs text-gold tracking-wider">SALON</p>
-              </div>
+              <img 
+                src="/WhatsApp Image 2026-06-28 at 3.47.07 PM.jpeg" 
+                alt="RS Unisex Salon Logo" 
+                className="w-12 h-12 object-contain rounded-full"
+              />
             </div>
             <p className="text-white/60 text-sm leading-relaxed mb-4">
               Premium unisex salon offering world-class beauty and grooming services. Experience luxury at its finest.
