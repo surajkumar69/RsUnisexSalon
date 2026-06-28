@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Scissors } from 'lucide-react'
+import logo from '../../logoNew.jpeg'
 
 const OpeningAnimation = () => {
   return (
@@ -48,9 +48,9 @@ const OpeningAnimation = () => {
             }}
           >
             <img 
-              src="/WhatsApp Image 2026-06-28 at 3.47.07 PM.jpeg" 
+              src={logo} 
               alt="RS Unisex Salon Logo" 
-              className="w-32 h-32 mx-auto object-contain rounded-full shadow-2xl shadow-gold/30"
+              className="w-40 h-40 mx-auto object-contain rounded-full shadow-2xl shadow-gold/30"
             />
           </motion.div>
           

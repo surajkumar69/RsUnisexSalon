@@ -1,6 +1,7 @@
 import { useState, useEffect } from 'react'
 import { motion, AnimatePresence } from 'framer-motion'
-import { Menu, X, Phone, Scissors } from 'lucide-react'
+import { Menu, X, Phone } from 'lucide-react'
+import logo from '../../logoNew.jpeg'
 
 const Navbar = () => {
   const [isScrolled, setIsScrolled] = useState(false)
@@ -66,9 +67,9 @@ const Navbar = () => {
             whileHover={{ scale: 1.05 }}
           >
             <img 
-              src="/WhatsApp Image 2026-06-28 at 3.47.07 PM.jpeg" 
+              src={logo} 
               alt="RS Unisex Salon Logo" 
-              className="w-12 h-12 object-contain rounded-full"
+              className="h-14 w-auto object-contain"
             />
           </motion.div>
 

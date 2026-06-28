@@ -1,5 +1,6 @@
 import { motion } from 'framer-motion'
-import { Scissors, Phone, MapPin, Mail, Facebook, Instagram, Youtube, ArrowUp } from 'lucide-react'
+import { Phone, MapPin, Facebook, Instagram, Youtube, ArrowUp } from 'lucide-react'
+import logo from '../../logoNew.jpeg'
 
 const Footer = () => {
   const scrollToTop = () => {
@@ -58,9 +59,9 @@ const Footer = () => {
           >
             <div className="flex items-center gap-3 mb-4">
               <img 
-                src="/WhatsApp Image 2026-06-28 at 3.47.07 PM.jpeg" 
+                src={logo} 
                 alt="RS Unisex Salon Logo" 
-                className="w-12 h-12 object-contain rounded-full"
+                className="h-14 w-auto object-contain"
               />
             </div>
             <p className="text-white/60 text-sm leading-relaxed mb-4">
