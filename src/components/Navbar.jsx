@@ -13,7 +13,7 @@ const Navbar = () => {
     { name: 'About', id: 'about' },
     { name: 'Services', id: 'services' },
     { name: 'Price List', id: 'price-list' },
-    { name: 'Gallery', id: 'gallery' },
+    { name: 'Hair Services', id: 'hair-services-pricing' },
     { name: 'Testimonials', id: 'testimonials' },
     { name: 'FAQ', id: 'faq' },
     { name: 'Contact', id: 'contact' },

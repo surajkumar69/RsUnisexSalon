@@ -1,5 +1,5 @@
 import { motion } from 'framer-motion'
-import { Phone, MapPin, Facebook, Instagram, Youtube, ArrowUp } from 'lucide-react'
+import { Phone, MapPin, Mail, Facebook, Instagram, Youtube, ArrowUp } from 'lucide-react'
 import logo from '../../logoNew.jpeg'
 
 const Footer = () => {
@@ -12,7 +12,7 @@ const Footer = () => {
     { name: 'About', id: 'about' },
     { name: 'Services', id: 'services' },
     { name: 'Price List', id: 'price-list' },
-    { name: 'Gallery', id: 'gallery' },
+    { name: 'Hair Services', id: 'hair-services-pricing' },
     { name: 'Contact', id: 'contact' },
   ]
 
@@ -146,6 +146,12 @@ const Footer = () => {
                   <p className="text-white/60 text-sm">+91 9876240337</p>
                   <p className="text-white/60 text-sm">+91 7657870007</p>
                 </div>
+              </li>
+              <li className="flex items-start gap-2">
+                <Mail className="w-4 h-4 text-gold mt-1 flex-shrink-0" />
+                <a href="mailto:rsunisexsalon07@gmail.com" className="text-white/60 text-sm hover:text-gold transition-colors break-all">
+                  rsunisexsalon07@gmail.com
+                </a>
               </li>
               <li className="flex items-start gap-2">
                 <MapPin className="w-4 h-4 text-gold mt-1 flex-shrink-0" />

@@ -5,7 +5,7 @@ import Hero from './components/Hero'
 import About from './components/About'
 import Services from './components/Services'
 import PriceList from './components/PriceList'
-import Gallery from './components/Gallery'
+import HairServicesPricing from './components/HairServicesPricing'
 import Testimonials from './components/Testimonials'
 import FAQ from './components/FAQ'
 import Booking from './components/Booking'
@@ -52,7 +52,7 @@ function App() {
           <About />
           <Services />
           <PriceList />
-          <Gallery />
+          <HairServicesPricing />
           <Testimonials />
           <FAQ />
           <Booking />

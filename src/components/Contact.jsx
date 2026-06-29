@@ -123,6 +123,34 @@ const Contact = () => {
               </div>
             </motion.div>
 
+            {/* Email */}
+            <motion.div
+              className="glass-card p-6 hover:border-gold/30 transition-all duration-300"
+              whileHover={{ scale: 1.02 }}
+            >
+              <div className="flex items-start gap-4">
+                <div className="w-12 h-12 bg-gradient-to-br from-gold/20 to-gold/10 rounded-full flex items-center justify-center flex-shrink-0">
+                  <svg 
+                    className="w-6 h-6 text-gold" 
+                    viewBox="0 0 24 24" 
+                    fill="currentColor"
+                    xmlns="http://www.w3.org/2000/svg"
+                  >
+                    <path d="M24 4.5v15c0 .85-.65 1.5-1.5 1.5H19V7.5L12 12 5 7.5V21H1.5C.65 21 0 20.35 0 19.5v-15c0-.85.65-1.5 1.5-1.5H4l8 5.5L20 3h2.5c.85 0 1.5.65 1.5 1.5z"/>
+                  </svg>
+                </div>
+                <div className="flex-1">
+                  <h4 className="text-white font-semibold mb-2">Email</h4>
+                  <a
+                    href="mailto:rsunisexsalon07@gmail.com"
+                    className="text-white/70 hover:text-gold transition-colors break-all"
+                  >
+                    rsunisexsalon07@gmail.com
+                  </a>
+                </div>
+              </div>
+            </motion.div>
+
             {/* Working Hours */}
             <motion.div
               className="glass-card p-6 hover:border-gold/30 transition-all duration-300"
