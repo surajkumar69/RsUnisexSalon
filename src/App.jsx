@@ -4,7 +4,6 @@ import Navbar from './components/Navbar'
 import Hero from './components/Hero'
 import About from './components/About'
 import Services from './components/Services'
-import PriceList from './components/PriceList'
 import HairServicesPricing from './components/HairServicesPricing'
 import Testimonials from './components/Testimonials'
 import FAQ from './components/FAQ'
@@ -51,7 +50,6 @@ function App() {
           <Hero />
           <About />
           <Services />
-          <PriceList />
           <HairServicesPricing />
           <Testimonials />
           <FAQ />

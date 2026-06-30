@@ -11,8 +11,7 @@ const Footer = () => {
     { name: 'Home', id: 'home' },
     { name: 'About', id: 'about' },
     { name: 'Services', id: 'services' },
-    { name: 'Price List', id: 'price-list' },
-    { name: 'Hair Services', id: 'hair-services-pricing' },
+    { name: "Women's Hair Services", id: 'womens-hair-services' },
     { name: 'Contact', id: 'contact' },
   ]
 

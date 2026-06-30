@@ -119,8 +119,39 @@ const HairServicesPricing = () => {
     },
   }
 
+  const handleBookNow = (serviceName) => {
+    const bookingSection = document.getElementById('booking')
+    if (bookingSection) {
+      bookingSection.scrollIntoView({ behavior: 'smooth' })
+
+      // Update form service dropdown
+      const selectElement = document.querySelector('select[name="service"]')
+      if (selectElement) {
+        let serviceValue = 'Other'
+        const lowerName = serviceName.toLowerCase()
+        if (lowerName.includes('cut')) {
+          serviceValue = 'Hair Cut'
+        } else if (lowerName.includes('colour') || lowerName.includes('color') || lowerName.includes('highlight')) {
+          serviceValue = 'Hair Coloring'
+        } else {
+          serviceValue = 'Other'
+        }
+        
+        selectElement.value = serviceValue
+        selectElement.dispatchEvent(new Event('change', { bubbles: true }))
+      }
+
+      // Update form message field
+      const messageElement = document.querySelector('textarea[name="message"]')
+      if (messageElement) {
+        messageElement.value = `I would like to book a "${serviceName}" session.`
+        messageElement.dispatchEvent(new Event('input', { bubbles: true }))
+      }
+    }
+  }
+
   return (
-    <section id="hair-services-pricing" ref={ref} className="py-20 md:py-32 relative overflow-hidden">
+    <section id="womens-hair-services" ref={ref} className="py-20 md:py-32 relative overflow-hidden">
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-to-b from-black via-darkGray to-black" />
       
@@ -150,7 +181,7 @@ const HairServicesPricing = () => {
             variants={itemVariants}
             className="text-gold tracking-[0.3em] mb-4 font-medium"
           >
-            HAIR SERVICES & PRICING
+            ✨ WOMEN'S HAIR SERVICES
           </motion.h2>
           <motion.h3
             variants={itemVariants}
@@ -199,10 +230,21 @@ const HairServicesPricing = () => {
                   </p>
                 </div>
 
-                {/* Price Tag */}
-                <div className="flex items-center gap-1.5 px-4 py-1.5 bg-gold/10 border border-gold/30 rounded-full text-gold font-bold text-lg w-fit">
-                  <IndianRupee className="w-4 h-4" />
-                  <span>{service.price}</span>
+                {/* Footer Section: Price Tag & Book Now Button */}
+                <div className="flex items-center justify-between mt-6 pt-4 border-t border-white/5">
+                  <div className="flex items-center gap-1.5 px-3 py-1.5 bg-gold/10 border border-gold/30 rounded-full text-gold font-bold text-base w-fit">
+                    <IndianRupee className="w-4 h-4" />
+                    <span>{service.price}</span>
+                  </div>
+                  
+                  <motion.button
+                    onClick={() => handleBookNow(service.name)}
+                    className="flex items-center gap-1.5 px-4 py-2 bg-gradient-to-r from-gold to-goldDark text-black text-xs font-semibold rounded-full hover:shadow-md hover:shadow-gold/20 transition-all duration-300 cursor-pointer"
+                    whileHover={{ scale: 1.05 }}
+                    whileTap={{ scale: 0.95 }}
+                  >
+                    <span>Book Now</span>
+                  </motion.button>
                 </div>
               </motion.div>
             )

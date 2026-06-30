@@ -18,21 +18,6 @@ const Services = () => {
 
   const serviceCategories = [
     {
-      title: 'Hair Services',
-      icon: Scissors,
-      services: [
-        { name: 'Hair Cut', price: 'Starting from ₹150' },
-        { name: 'Hair Wash', price: 'Starting from ₹50' },
-        { name: 'Blow Dry', price: 'Starting from ₹100' },
-        { name: 'Hair Spa', price: 'Starting from ₹300' },
-        { name: 'Hair Coloring', price: 'Starting from ₹300' },
-        { name: 'Hair Polishing', price: 'Starting from ₹500' },
-        { name: 'Hair Ironing', price: 'Starting from ₹200' },
-        { name: 'Root Touch Up', price: 'Starting from ₹400' },
-        { name: 'Highlights', price: 'Starting from ₹600' },
-      ]
-    },
-    {
       title: 'Facial',
       icon: Sparkles,
       services: [
@@ -50,6 +35,7 @@ const Services = () => {
       title: 'Hair Treatments',
       icon: Droplets,
       services: [
+        { name: 'Hair Spa', price: 'Starting from ₹300' },
         { name: 'Smoothening', price: '₹4000' },
         { name: 'Keratin Treatment', price: '₹4000' },
         { name: 'Shine Bond', price: '₹5000' },
@@ -96,6 +82,7 @@ const Services = () => {
         { name: 'Head Massage with Wash', price: '₹150' },
         { name: 'Beard Trim/Shave', price: '₹50' },
         { name: 'Hair Color', price: '₹300' },
+        { name: 'Hair Highlights', price: '₹600' },
         { name: 'Beard Color', price: '₹200' },
         { name: 'Normal Cleanup', price: '₹300' },
       ]
