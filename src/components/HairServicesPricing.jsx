@@ -88,7 +88,7 @@ const HairServicesPricing = () => {
     },
     {
       name: 'Colour Application',
-      price: 500,
+      price: 300,
       description: 'Expert, mess-free application of your preferred hair color.',
       icon: Palette
     },
